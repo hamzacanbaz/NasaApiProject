@@ -3,12 +3,10 @@ package com.example.nasaproject.view.comments
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModel
-import com.example.nasaproject.database.CommentsEntity
+import com.example.nasaproject.database.entities.CommentsEntity
 import com.example.nasaproject.database.DatabaseDao
 import com.example.nasaproject.database.PhotoDao
-import com.example.nasaproject.database.PhotosEntity
-import java.text.FieldPosition
+import com.example.nasaproject.database.entities.PhotosEntity
 
 class CommentViewModel(
     val id:Long,

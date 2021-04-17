@@ -1,10 +1,6 @@
 package com.example.nasaproject.service
 
-import com.example.nasaproject.NasaModel
-import com.google.gson.JsonArray
-import com.google.gson.JsonElement
 import com.google.gson.JsonObject
-import com.google.gson.JsonSerializer
 import retrofit2.Response
 import retrofit2.http.GET
 

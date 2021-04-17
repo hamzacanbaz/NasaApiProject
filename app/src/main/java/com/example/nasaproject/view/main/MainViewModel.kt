@@ -1,22 +1,15 @@
 package com.example.nasaproject.view.main
 
 import android.app.Application
-import android.util.JsonReader
 import android.widget.Toast
 import androidx.lifecycle.*
-import com.bumptech.glide.Glide
-import com.example.nasaproject.NasaModel
 import com.example.nasaproject.database.*
+import com.example.nasaproject.database.entities.PhotosEntity
 import com.example.nasaproject.service.NasaApi
 import com.example.nasaproject.util.CustomSharedPreferences
-import com.google.gson.GsonBuilder
-import com.google.gson.JsonObject
 import kotlinx.coroutines.*
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.StringReader
-import kotlin.coroutines.CoroutineContext
 
 
 class MainViewModel(

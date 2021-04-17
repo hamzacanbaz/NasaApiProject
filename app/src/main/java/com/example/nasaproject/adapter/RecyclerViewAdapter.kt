@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.nasaproject.R
-import com.example.nasaproject.database.CommentsEntity
+import com.example.nasaproject.database.entities.CommentsEntity
 import kotlinx.android.synthetic.main.row_item.view.*
 
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {

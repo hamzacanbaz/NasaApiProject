@@ -1,4 +1,4 @@
-package com.example.nasaproject
+package com.example.nasaproject.models
 
 import android.util.JsonReader
 import androidx.room.Entity

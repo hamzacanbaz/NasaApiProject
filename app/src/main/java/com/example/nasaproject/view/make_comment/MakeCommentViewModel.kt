@@ -3,9 +3,8 @@ package com.example.nasaproject.view.make_comment
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.nasaproject.database.CommentsEntity
+import com.example.nasaproject.database.entities.CommentsEntity
 import com.example.nasaproject.database.DatabaseDao
 import kotlinx.coroutines.launch
 

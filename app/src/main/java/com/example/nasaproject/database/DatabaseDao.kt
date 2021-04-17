@@ -2,7 +2,7 @@ package com.example.nasaproject.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.nasaproject.NasaModel
+import com.example.nasaproject.database.entities.CommentsEntity
 
 @Dao
 interface DatabaseDao {

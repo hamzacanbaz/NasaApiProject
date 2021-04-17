@@ -7,25 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.nasaproject.NasaModel
 import com.example.nasaproject.R
 import com.example.nasaproject.adapter.MainRecyclerViewAdapter
-import com.example.nasaproject.adapter.RecyclerViewAdapter
 import com.example.nasaproject.database.CommentDatabase
-import com.example.nasaproject.database.CommentsEntity
 import com.example.nasaproject.databinding.FragmentMainBinding
-import com.example.nasaproject.service.NasaApi
-import com.example.nasaproject.view.comments.CommentViewModel
 import kotlinx.coroutines.*
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class MainFragment : Fragment(),MainRecyclerViewAdapter.OnItemLongClickListen {
     val BASE_URL = "https://api.nasa.gov"

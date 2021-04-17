@@ -1,4 +1,4 @@
-package com.example.nasaproject.database
+package com.example.nasaproject.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -26,7 +26,7 @@ data class CommentsEntity(
 )
 
 //@Entity(tableName = "photos")
-//data class com.example.nasaproject.database.PhotosEntity(
+//data class com.example.nasaproject.database.entities.PhotosEntity(
 //
 //    @PrimaryKey(autoGenerate = true)
 //    var imageId : Long = 0L,

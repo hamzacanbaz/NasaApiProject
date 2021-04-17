@@ -5,21 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.nasaproject.NasaModel
 import com.example.nasaproject.R
-import com.example.nasaproject.database.CommentsEntity
-import com.example.nasaproject.database.PhotosEntity
+import com.example.nasaproject.database.entities.PhotosEntity
 import com.example.nasaproject.util.downloadfromurl
 import com.example.nasaproject.util.placeHolderProgressBar
 import com.example.nasaproject.view.main.MainFragmentDirections
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.fragment_comment.view.*
 import kotlinx.android.synthetic.main.main_row_item.view.*
-import kotlinx.android.synthetic.main.row_item.view.*
-import androidx.navigation.Navigation.findNavController as findNavController1
 
 class MainRecyclerViewAdapter(private val listener : OnItemLongClickListen) : RecyclerView.Adapter<MainRecyclerViewAdapter.ViewHolder>() {
 

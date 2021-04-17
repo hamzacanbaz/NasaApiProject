@@ -1,4 +1,4 @@
-package com.example.nasaproject.database
+package com.example.nasaproject.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
