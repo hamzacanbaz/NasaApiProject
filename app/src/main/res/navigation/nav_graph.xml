@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.nasaproject.view.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_commentFragment"
+            app:destination="@id/commentFragment" >
+
+        </action>
+        <action
+            android:id="@+id/action_mainFragment_to_makeComment"
+            app:destination="@id/makeComment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.nasaproject.view.comments.CommentFragment"
+        android:label="fragment_comment"
+        tools:layout="@layout/fragment_comment" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            />
+        <argument
+            android:name="position"
+            app:argType="long"/>
+        <action
+            android:id="@+id/action_commentFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeComment"
+        android:name="com.example.nasaproject.view.make_comment.MakeComment"
+        android:label="fragment_make_comment"
+        tools:layout="@layout/fragment_make_comment" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            />
+
+        <action
+            android:id="@+id/action_makeComment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
